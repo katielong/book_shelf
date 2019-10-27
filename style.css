@@ -1,8 +1,103 @@
 body {
+    font-family: 'Slabo 27px', serif;
     font-size: 15px;
     font-weight: bold;
 }
 
-.grid path {
-    stroke: #aaa;
+#content,
+#placeholder {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#placeholder {
+    text-align: center;
+}
+
+footer {
+    font-size: 0.8em;
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #888;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+
+/*title and slider*/
+
+.sliders,
+.header {
+    display: inline-block;
+}
+
+#slider {
+    vertical-align: middle;
+}
+
+#slider_div {
+    margin-left: 50px;
+}
+
+
+/*books*/
+
+text {
+    font-weight: normal;
+}
+
+.books {
+    stroke-width: 0.5px;
+}
+
+.books:hover {
+    stroke: #000 !important;
+    stroke-width: 2px !important;
+    cursor: pointer;
+}
+
+
+/*tooltipe*/
+
+#tooltip {
+    position: absolute;
+    width: 250px;
+    padding: 8px;
+    font-size: 0.8em;
+    border: solid 1px #aaa;
+    border-radius: 8px;
+    pointer-events: nont;
+    background: rgba(250, 250, 250, 0.85);
+}
+
+#tooltipTop {
+    width: 250px;
+    height: 120px;
+}
+
+#tooltipTopLeft {
+    width: 140px;
+    float: left;
+}
+
+#tooltipTopRight {
+    width: 110px;
+    float: right;
+}
+
+#tooltipTopRight img {
+    width: 110px;
+    height: 140px;
+}
+
+#bName {
+    font-size: 1.2em;
+    font-weight: bold;
 }

@@ -3,12 +3,48 @@
 
 <head>
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <div id='draw'></div>
     <script type='text/javascript' src='script.js'></script>
+
+    <div id="wrapper">
+        <div id="content" style='display:none;'>
+            <div>
+                <h2 class='header'>Bookshelf</h2>
+                <div id='slider_div' class='header'>
+                    <div class='sliders' id='slider'></div>
+                    <div class='sliders'>
+                        <p>Average Rating: <span id='slider_range'></span></p>
+                    </div>
+                </div>
+            </div>
+            <div id='draw'></div>
+            <div id="description">
+            </div>
+            <footer>
+                Visualization created by <a href="https://katielong.github.io/">Yue Long </a>
+            </footer>
+            <div id="tooltip" class="tooltip">
+                <div id="tooltipTop">
+                    <div id="tooltipTopLeft">
+                        <p id="bName"></p>
+                        <div id="bText"></div>
+                    </div>
+                    <div id="tooltipTopRight">
+                        <img id="tooltipImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="placeholder">
+            <img src='img/loading.gif'>
+        </div>
+    </div>
+
 </body>
 
 </html>

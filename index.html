@@ -16,6 +16,12 @@
         <div id="content" style='display:none;'>
             <h2>Bookshelf</h2>
             <span>Top 100 prolific authors from <a href='https://www.goodreads.com/api'>Goodreads</a></span>
+            <div id="description">
+                <p>This visualization was adapted from <a href="https://archive.nytimes.com/www.nytimes.com/interactive/2013/04/25/sports/football/picking-the-best-in-the-nfl-draft.html?_r=0">N.F.L. draft visualization from N.Y.T.</a> using data from goodreads
+                    API. Individual bars were colored by their average ratings on goodreads, and the users can also select books based on the number of pages that each book has. Clicking on each book will lead to the book's page on goodreads. I trimmed
+                    down the list to only show top 100, and I am playing with other options to show a more complete picture.
+                </p>
+            </div>
             <div>
                 <div id='slider_div' class='header'>
                     <div class='sliders' id='slider_text'>
@@ -31,10 +37,8 @@
                 </div>
             </div>
             <div id='draw'></div>
-            <div id="description">
-            </div>
             <footer>
-                Visualization created by <a href="https://katielong.github.io/">Yue Long </a>
+                Visualization created by <a href="https://katielong.github.io/">Yue Long </a>, code <a href="https://github.com/katielong/book_shelf">here</a>
             </footer>
             <div id="tooltip" class="tooltip">
                 <div id="tooltip_top">

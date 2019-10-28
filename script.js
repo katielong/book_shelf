@@ -155,8 +155,8 @@ function draw(err, books, authors) {
             // get name and text
             tooltip.select('#book_name').html(books[d].title);
             tooltip.select('#book_text').html('<p><span>Avg. Rating:</span> ' + books[d].average_rating + '</p>' +
-                '<p> <span># of Ratings:</span> ' + comma(books[d].ratings_count) + '</p>' +
-                '<p> <span># of Pages:</span> ' + slider_format(books[d]['# num_pages']) + '</p>' +
+                '<p> <span>No. of Ratings:</span> ' + comma(books[d].ratings_count) + '</p>' +
+                '<p> <span>No. of Pages:</span> ' + slider_format(books[d]['# num_pages']) + '</p>' +
                 '<p> <span>Language:</span> ' + books[d].language_code + '</p>')
 
             tooltip.style('left', (d3.event.pageX + 10) + 'px')

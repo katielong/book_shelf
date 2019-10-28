@@ -4,6 +4,7 @@
 <head>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
     <script src="https://unpkg.com/d3-simple-slider"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -14,15 +15,19 @@
     <div id="wrapper">
         <div id="content" style='display:none;'>
             <h2>Bookshelf</h2>
+            <span>Top 100 prolific authors from <a href='https://www.goodreads.com/api'>Goodreads</a></span>
             <div>
-                <div class="header">
-                    <input id="search" placeholder="Search here.." value=''>
-                </div>
                 <div id='slider_div' class='header'>
-                    <div class='sliders' id='slider'></div>
-                    <div class='sliders'>
-                        <p># of Pages: <span id='slider_range'></span></p>
+                    <div class='sliders' id='slider_text'>
+                        <p>No. of Pages: <span id='slider_range'></span><br></p>
                     </div>
+                    <div class='sliders' id='slider'></div>
+                </div>
+                <div class='header'>
+                    <div class='legends' id='legend_text'>
+                        <p>Avg. Rating</p>
+                    </div>
+                    <div class='legends' id='legend'></div>
                 </div>
             </div>
             <div id='draw'></div>
@@ -32,13 +37,13 @@
                 Visualization created by <a href="https://katielong.github.io/">Yue Long </a>
             </footer>
             <div id="tooltip" class="tooltip">
-                <div id="tooltipTop">
-                    <div id="tooltipTopLeft">
-                        <p id="bName"></p>
-                        <div id="bText"></div>
+                <div id="tooltip_top">
+                    <div id="tooltip_top_left">
+                        <p id="book_name"></p>
+                        <div id="book_text"></div>
                     </div>
-                    <div id="tooltipTopRight">
-                        <img id="tooltipImg">
+                    <div id="tooltip_top_right">
+                        <img id="tooltip_img">
                     </div>
                 </div>
             </div>

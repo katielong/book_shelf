@@ -6,7 +6,7 @@ body {
 
 #content,
 #placeholder {
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -38,12 +38,27 @@ h2 {
 /*title and slider*/
 
 .sliders,
+.legends,
 .header {
     display: inline-block;
 }
 
 #slider {
     vertical-align: middle;
+}
+
+#slider_text {
+    width: 150px;
+}
+
+.cell text {
+    font-size: 0.7em;
+    text-anchor: middle;
+    font-weight: normal;
+}
+
+.tick text {
+    fill: #000;
 }
 
 
@@ -68,52 +83,40 @@ text {
 
 #tooltip {
     position: absolute;
-    width: 250px;
-    padding: 8px;
-    font-size: 0.8em;
+    width: 330px;
+    padding: 10px;
+    font-size: 1em;
     border: solid 1px #aaa;
     border-radius: 8px;
     pointer-events: nont;
     background: rgba(250, 250, 250, 0.85);
 }
 
-#tooltipTop {
-    width: 250px;
-    height: 120px;
+#tooltip_top {
+    width: 330px;
+    height: 200px;
 }
 
-#tooltipTopLeft {
-    width: 140px;
+#tooltip_top_left {
+    width: 160px;
     float: left;
 }
 
-#tooltipTopRight {
-    width: 110px;
+#tooltip_top_right {
+    width: 140px;
     float: right;
+    text-align: center;
 }
 
-#tooltipTopRight img {
-    width: 110px;
-    height: 140px;
+#tooltip_top_right img {
+    width: 100%;
+    height: 200px;
 }
 
-#bName {
+#book_name {
     font-size: 1.2em;
-    font-weight: bold;
 }
 
-#bText p {
-    margin: 0;
-}
-
-input {
-    border: none;
-    font-size: 1.5em;
-    font-style: italic;
-    width: 200px;
-}
-
-.names:hover {
-    font-weight: bold;
-    cursor: pointer;
+#book_text span {
+    font-weight: normal;
 }

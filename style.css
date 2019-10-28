@@ -30,6 +30,10 @@ a {
     clear: both;
 }
 
+h2 {
+    margin-bottom: 0;
+}
+
 
 /*title and slider*/
 
@@ -42,10 +46,6 @@ a {
     vertical-align: middle;
 }
 
-#slider_div {
-    margin-left: 50px;
-}
-
 
 /*books*/
 
@@ -54,7 +54,7 @@ text {
 }
 
 .books {
-    stroke-width: 0.5px;
+    stroke-width: 0.8px;
 }
 
 .books:hover {
@@ -100,4 +100,20 @@ text {
 #bName {
     font-size: 1.2em;
     font-weight: bold;
+}
+
+#bText p {
+    margin: 0;
+}
+
+input {
+    border: none;
+    font-size: 1.5em;
+    font-style: italic;
+    width: 200px;
+}
+
+.names:hover {
+    font-weight: bold;
+    cursor: pointer;
 }
